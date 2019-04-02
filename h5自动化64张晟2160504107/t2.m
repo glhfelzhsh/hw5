@@ -1,0 +1,27 @@
+img1=im2double(imread('test3_corrupt.pgm'));
+img2=im2double(imread('test4 copy.bmp'));
+y=btHighpass('t2test3',img1,1,1);
+y=btHighpass('t2test3',img1,1,5);
+y=btHighpass('t2test3',img1,1,10);
+y=btHighpass('t2test3',img1,1,100);
+y=btHighpass('t2test3',img1,5,1);
+y=btHighpass('t2test3',img1,5,5);
+y=btHighpass('t2test3',img1,5,10);
+y=btHighpass('t2test3',img1,5,100);
+y=gsHighpass('t2test3',img1,1);
+y=gsHighpass('t2test3',img1,5);
+y=gsHighpass('t2test3',img1,10);
+y=gsHighpass('t2test3',img1,100);
+
+y=btHighpass('t2test4',img2,1,1);
+y=btHighpass('t2test4',img2,1,5);
+y=btHighpass('t2test4',img2,1,10);
+y=btHighpass('t2test4',img2,1,100);
+y=btHighpass('t2test4',img2,5,1);
+y=btHighpass('t2test4',img2,5,5);
+y=btHighpass('t2test4',img2,5,10);
+y=btHighpass('t2test4',img2,5,100);
+y=gsHighpass('t2test4',img2,1);
+y=gsHighpass('t2test4',img2,5);
+y=gsHighpass('t2test4',img2,10);
+y=gsHighpass('t2test4',img2,100);
